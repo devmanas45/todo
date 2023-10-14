@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    user-select: none;
+    
+}
+body{
+    background: linear-gradient(to right,blue,skyblue); 
+}
+.container{
+    min-height:50vh;
+    width:50%;
+    margin: auto;
+    margin-top:5%;
+    padding: 20px;
+    background-color: white;
+    border-radius:20px;
+    border:10px solid green;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    
+    
+
+}
+.heading>img{
+    width:40px;
+    height: 40px;
+    margin-left:10px;
+}
+.heading>h1{
+    font-family: 'Poppins', sans-serif;
+}
+.input{
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+
+}
+.input>input{
+    width:70%;
+    height:40px;
+    outline:none;
+    border:0.5px solid rgba(73, 72, 72, 0.156);
+    background-color: rgba(128, 128, 128, 0.179);
+    border-radius:30px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:15px;
+    font-weight: 900;
+
+}
+.input>button{
+    position: relative;
+    right:50px;
+    width:20%;
+    height:40px;
+    outline:none;
+    border:0.5px solid rgba(73, 73, 72, 0.037);
+    background-color: rgb(255, 150, 4);
+    border-radius:30px;
+    cursor: pointer;
+}
+.error{
+    color:crimson;
+    padding:20px;
+    display:none;
+}
+.task{
+    padding-top:30px;
+}
+.listContainer>li{
+    list-style: none;
+    font-size:20px;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    cursor:pointer;
+
+
+}
+.listContainer>li::before{
+    content:'';
+    position: absolute;
+    height:28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+
+}
+.listContainer>li.checked{
+    color:#555;
+    text-decoration: line-through;
+
+}
+.listContainer>li.checked::before{
+    background-image:url(checked.png) ;
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    height:30px;
+    width:30px;
+    font-size:20px;
+    line-height: 30px;
+    text-align: center;
+
+
+}
+ul li span:hover{
+    background:rgb(218, 135, 135);
+    border-radius:50%;
+}
+
+@media(max-width:1980px){
+    .container{
+        width:90%;
+        margin:auto;
+        margin-top:30%;
+    }
+}
