@@ -119,10 +119,10 @@ ul li span:hover{
     border-radius:50%;
 }
 
-/*@media(max-width:1980px){
+@media(max-width:1080px){
     .container{
         width:90%;
         margin:auto;
         margin-top:30%;
     }
-}*/
+}
